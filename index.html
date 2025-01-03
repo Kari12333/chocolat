@@ -744,39 +744,86 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="https://formspree.io/f/mjkkpgqd" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200" data-formspree="json">
-              <div class="row gy-4">
+            <form action="https://formspree.io/f/mdkkpaqr" method="post" data-aos="fade-up" data-aos-delay="200" redirect="https://kari12333.github.io/chocolat/">
 
+               <div class="row gy-4">
+            
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Nombre</label>
                   <input type="text" name="name" id="name-field" class="form-control" required="">
                 </div>
-
+            
                 <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Correo electronico</label>
+                  <label for="email-field" class="pb-2">Correo electrónico</label>
                   <input type="email" class="form-control" name="email" id="email-field" required="">
                 </div>
-
+            
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Asunto</label>
                   <input type="text" class="form-control" name="subject" id="subject-field" required="">
                 </div>
-
+            
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Mensaje</label>
                   <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
                 </div>
-
+            
+                <!-- Sección de selección de postres y cantidad -->
+                <div class="col-md-12">
+                  <label for="postres">Selecciona los postres y la cantidad:</label><br>
+            
+                  <input type="checkbox" id="chocolate" name="postres[]" value="Pastel de chocolate">
+                  <label for="chocolate">Pastel de chocolate</label>
+                  <input type="number" name="cantidad_chocolate" id="cantidad_chocolate" min="1" value="1" class="form-control" style="width: 60px; display: inline-block;"><br>
+            
+                  <input type="checkbox" id="vainilla" name="postres[]" value="Pastel de vainilla">
+                  <label for="vainilla">Pastel de vainilla</label>
+                  <input type="number" name="cantidad_vainilla" id="cantidad_vainilla" min="1" value="1" class="form-control" style="width: 60px; display: inline-block;"><br>
+            
+                  <input type="checkbox" id="galletas" name="postres[]" value="Galletas">
+                  <label for="galletas">Galletas</label>
+                  <input type="number" name="cantidad_galletas" id="cantidad_galletas" min="1" value="1" class="form-control" style="width: 60px; display: inline-block;"><br>
+            
+                  <input type="checkbox" id="brownies" name="postres[]" value="Brownies">
+                  <label for="brownies">Brownies</label>
+                  <input type="number" name="cantidad_brownies" id="cantidad_brownies" min="1" value="1" class="form-control" style="width: 60px; display: inline-block;"><br><br>
+                </div>
+            
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Su mensaje se ha enviado.</div>
-
+            
                   <button type="submit">Enviar Mensaje</button>
                 </div>
-
+            
               </div>
             </form>
+            
+            <!-- Script para manejar el formulario y enviar solo los campos seleccionados -->
+            <script>
+              document.getElementById("order-form").addEventListener("submit", function(event) {
+                const form = event.target;
+            
+                // Revisar si se seleccionó un postre y agregarlo al formulario
+                if (!document.getElementById("chocolate").checked) {
+                  form.querySelector('input[name="cantidad_chocolate"]').disabled = true;
+                }
+            
+                if (!document.getElementById("vainilla").checked) {
+                  form.querySelector('input[name="cantidad_vainilla"]').disabled = true;
+                }
+            
+                if (!document.getElementById("galletas").checked) {
+                  form.querySelector('input[name="cantidad_galletas"]').disabled = true;
+                }
+            
+                if (!document.getElementById("brownies").checked) {
+                  form.querySelector('input[name="cantidad_brownies"]').disabled = true;
+                }
+              });
+            </script>
+            
           </div><!-- End Contact Form -->
 
         </div>
@@ -825,26 +872,7 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <script>
-    document.querySelector('.php-email-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      const form = e.target;
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-      })
-        .then(response => response.json())
-        .then(data => {
-          if (data.ok) {
-            alert('¡Mensaje enviado correctamente!');
-            form.reset();
-          } else {
-            alert('Hubo un error al enviar tu mensaje.');
-          }
-        })
-        .catch(() => alert('Hubo un problema al enviar el mensaje.'));
-    });
-  </script>
+  
   
 </body>
 
