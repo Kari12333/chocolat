@@ -744,88 +744,99 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="https://formspree.io/f/mdkkpaqr" method="post" data-aos="fade-up" data-aos-delay="200" redirect="https://kari12333.github.io/chocolat/">
-
-               <div class="row gy-4">
-            
+            <form id="order-form" action="https://formspree.io/f/mdkkpaqr" method="post" data-aos="fade-up" data-aos-delay="200" redirect="https://kari12333.github.io/chocolat/">
+              <div class="row gy-4">
+                
+                <!-- Campo Nombre -->
                 <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Nombre</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                  <label for="name-field" class="form-label">Nombre</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required>
                 </div>
-            
+          
+                <!-- Campo Correo -->
                 <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Correo electrónico</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                  <label for="email-field" class="form-label">Correo electrónico</label>
+                  <input type="email" name="email" id="email-field" class="form-control" required>
                 </div>
-            
+          
+                <!-- Campo Asunto -->
                 <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Asunto</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                  <label for="subject-field" class="form-label">Asunto</label>
+                  <input type="text" name="subject" id="subject-field" class="form-control" required>
                 </div>
-            
+          
+                <!-- Campo Mensaje -->
                 <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Mensaje</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  <label for="message-field" class="form-label">Mensaje</label>
+                  <textarea name="message" id="message-field" rows="5" class="form-control" required></textarea>
                 </div>
-            
-                <!-- Sección de selección de postres y cantidad -->
+          
+                <!-- Selección de Postres -->
                 <div class="col-md-12">
-                  <label for="postres">Selecciona los postres y la cantidad:</label><br>
-            
-                  <input type="checkbox" id="chocolate" name="postres[]" value="Pastel de chocolate">
-                  <label for="chocolate">Pastel de chocolate</label>
-                  <input type="number" name="cantidad_chocolate" id="cantidad_chocolate" min="1" value="1" class="form-control" style="width: 60px; display: inline-block;"><br>
-            
-                  <input type="checkbox" id="vainilla" name="postres[]" value="Pastel de vainilla">
-                  <label for="vainilla">Pastel de vainilla</label>
-                  <input type="number" name="cantidad_vainilla" id="cantidad_vainilla" min="1" value="1" class="form-control" style="width: 60px; display: inline-block;"><br>
-            
-                  <input type="checkbox" id="galletas" name="postres[]" value="Galletas">
-                  <label for="galletas">Galletas</label>
-                  <input type="number" name="cantidad_galletas" id="cantidad_galletas" min="1" value="1" class="form-control" style="width: 60px; display: inline-block;"><br>
-            
-                  <input type="checkbox" id="brownies" name="postres[]" value="Brownies">
-                  <label for="brownies">Brownies</label>
-                  <input type="number" name="cantidad_brownies" id="cantidad_brownies" min="1" value="1" class="form-control" style="width: 60px; display: inline-block;"><br><br>
+                  <label for="postres" class="form-label">Selecciona los postres y la cantidad:</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="chocolate" name="postres[]" value="Pastel de chocolate">
+                    <label class="form-check-label" for="chocolate">Pastel de chocolate</label>
+                    <input type="number" name="cantidad_chocolate" id="cantidad_chocolate" min="1" value="1" class="form-control d-inline w-auto">
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="vainilla" name="postres[]" value="Pastel de vainilla">
+                    <label class="form-check-label" for="vainilla">Pastel de vainilla</label>
+                    <input type="number" name="cantidad_vainilla" id="cantidad_vainilla" min="1" value="1" class="form-control d-inline w-auto">
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="galletas" name="postres[]" value="Galletas">
+                    <label class="form-check-label" for="galletas">Galletas</label>
+                    <input type="number" name="cantidad_galletas" id="cantidad_galletas" min="1" value="1" class="form-control d-inline w-auto">
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="brownies" name="postres[]" value="Brownies">
+                    <label class="form-check-label" for="brownies">Brownies</label>
+                    <input type="number" name="cantidad_brownies" id="cantidad_brownies" min="1" value="1" class="form-control d-inline w-auto">
+                  </div>
                 </div>
-            
+          
+                <!-- Botones -->
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Su mensaje se ha enviado.</div>
-            
-                  <button type="submit">Enviar Mensaje</button>
+                  <div class="loading alert alert-info d-none">Loading...</div>
+                  <div class="error-message alert alert-danger d-none">Ha ocurrido un error.</div>
+                  <div class="sent-message alert alert-success d-none">Su mensaje se ha enviado.</div>
+          
+                  <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                  <button type="button" class="btn btn-secondary" id="reset-btn">Nuevo Pedido</button>
                 </div>
-            
               </div>
             </form>
-            
-            <!-- Script para manejar el formulario y enviar solo los campos seleccionados -->
-            <script>
-              document.getElementById("order-form").addEventListener("submit", function(event) {
-                const form = event.target;
-            
-                // Revisar si se seleccionó un postre y agregarlo al formulario
-                if (!document.getElementById("chocolate").checked) {
-                  form.querySelector('input[name="cantidad_chocolate"]').disabled = true;
-                }
-            
-                if (!document.getElementById("vainilla").checked) {
-                  form.querySelector('input[name="cantidad_vainilla"]').disabled = true;
-                }
-            
-                if (!document.getElementById("galletas").checked) {
-                  form.querySelector('input[name="cantidad_galletas"]').disabled = true;
-                }
-            
-                if (!document.getElementById("brownies").checked) {
-                  form.querySelector('input[name="cantidad_brownies"]').disabled = true;
+          </div>
+          
+          <!-- Script para limpiar el formulario -->
+          <script>
+            document.getElementById("reset-btn").addEventListener("click", function () {
+              const form = document.getElementById("order-form");
+              form.reset(); // Limpia todos los campos del formulario
+              document.querySelector(".error-message").classList.add("d-none");
+              document.querySelector(".sent-message").classList.add("d-none");
+              document.querySelector(".loading").classList.add("d-none");
+            });
+          </script>
+          
+          <!-- Script para manejar los postres -->
+          <script>
+            document.getElementById("order-form").addEventListener("submit", function (event) {
+              const form = event.target;
+          
+              // Deshabilitar campos si no están seleccionados
+              ["chocolate", "vainilla", "galletas", "brownies"].forEach((id) => {
+                const checkbox = document.getElementById(id);
+                const cantidad = document.getElementById(`cantidad_${id}`);
+                if (!checkbox.checked) {
+                  cantidad.disabled = true;
                 }
               });
-            </script>
-            
-          </div><!-- End Contact Form -->
-
+            });
+          </script>
+        </div>
+                  
         </div>
 
       </div>
