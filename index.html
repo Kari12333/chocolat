@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - iPortfolio Bootstrap Template</title>
+  <title>Chocolat</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="icon"> <!-- Favicon de la pagina en la pestaña -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -48,7 +48,7 @@
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Alex Smith</h1>
+      <h5 class="sitename text-center fw-bold text-uppercase">Chocolat</h5>
     </a>
 
     <div class="social-links text-center">
@@ -61,29 +61,12 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#inicio" class="active"><i class="bi bi-house navicon"></i>Inicio</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="#postres"><i class="bi bi-images navicon"></i> Postres</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Servicio</a></li>
+    
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i>¡Hacer pedido!</a></li>
       </ul>
     </nav>
 
@@ -92,301 +75,66 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="inicio" class="hero section dark-background">
 
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Alex Smith</h2>
-        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <div class="container text-center"> <!-- Centrar texto usando Bootstrap -->
+          <h1 style="font-family: 'Alex Brush';"">Chocolat</h1> <!-- Negrita -->
+          <h3 class="custom-font ">Cupcakes y postres</h3> <!-- Color gris claro -->
+      </div> 
+        <p class="text-center">¿Cansado de la rutina? 
+          <span class="typed" data-typed-items="¡Date un capricho y ven a probar nuestros postres!" data-typeSpeed="100" data-backSpeed="0" data-loop="false"></span>
+          <span class="typed-cursor" aria-hidden="false"></span>
+        </p>
       </div>
 
     </section><!-- /Hero Section -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
-            <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-            <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+    <section id="postres" class="portfolio section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <h2 style="font-family: 'Times New Roman', cursive;">Postres</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quisquam ut labore earum magni provident accusamus, corrupti incidunt inventore iusto vitae asperiores ipsa sit vero explicabo reiciendis dolor qui mollitia! </p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
+            <li data-filter="*" class="filter-active">Todos</li>
+            <li data-filter=".filter-pasteles">Pasteles</li>
+             <li data-filter=".filter-cupcakes">Cupcakes</li>
+            <li data-filter=".filter-postres">Postres</li>
           </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pasteles">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <img src="https://www.recetasnestle.com.ec/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/45fae8a0529af6bde82db0195a3fec0b.webp?itok=2KHRbt8w" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Pastel Opera</h4>
+                  <p>$60 MXN</p>
+                  <a href="https://www.recetasnestle.com.ec/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/45fae8a0529af6bde82db0195a3fec0b.webp?itok=2KHRbt8w" title="Bizcocho de harina de almendra bañado con almibar de cafe
+Montado en capas de crema de mantequilla sabor moka y ganache." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Más información" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-postres">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <img src="https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/8f6ac5e57a2e9bd8f569b7ab9e08996f.webp?itok=gi7q3ctp" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Macarrones</h4>
+                  <p>$55 MXN</p>
+                  <a href="https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/8f6ac5e57a2e9bd8f569b7ab9e08996f.webp?itok=gi7q3ctp" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quisquam ut labore earum magni provident accusamus, corrupti incidunt inventore iusto vitae asperiores ipsa sit vero explicabo reiciendis dolor qui mollitia! " data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Más información" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -415,14 +163,14 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pasteles">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                <img src="https://assets.elgourmet.com/wp-content/uploads/2023/03/cover_axhbi01f76_aran-1024x683.jpg.webp" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Pastel Blueberries</h4>
+                  <p>$45 MXN </p>
+                  <a href="https://assets.elgourmet.com/wp-content/uploads/2023/03/cover_axhbi01f76_aran-1024x683.jpg.webp" title="Descripcion Lorem ipsum, dolor sit amet consectetur" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="Más información" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -517,6 +265,60 @@
 
       </div>
 
+      <script>
+        // Función para cargar y mostrar los productos desde el JSON
+        function cargarProductos() {
+          fetch('data/productos.json') // Cambia la ruta según la ubicación del archivo JSON
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('No se pudo cargar el archivo JSON');
+              }
+              return response.json();
+            })
+            .then(data => {
+              const productosGaleria = document.getElementById('productos-galeria');
+              productosGaleria.innerHTML = ''; // Limpiar contenido previo
+      
+              data.productos.forEach(producto => {
+                // Crear el contenedor de cada producto
+                const productoDiv = document.createElement('div');
+                productoDiv.className = `col-lg-4 col-md-6 portfolio-item isotope-item ${producto.categoria}`;
+      
+                // Crear el contenido del producto
+productoDiv.innerHTML = `
+  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+    <div class="portfolio-content h-100">
+      <img src="${producto.imagen}" class="img-fluid" alt="${producto.nombre}">
+      <div class="portfolio-info">
+        <h4>${producto.nombre}</h4>
+        <p>${producto.descripcion}</p>
+        <!-- Enlace para el zoom con la clase glightbox -->
+        <a href="${producto.imagen}" title="${producto.nombre}" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+          <i class="bi bi-zoom-in"></i>
+        </a>
+        <!-- Enlace a más detalles -->
+        <a href="${producto.enlace}" title="Más Detalles" class="details-link">
+          <i class="bi bi-link-45deg"></i>
+        </a>
+      </div>
+    </div>
+  </div><!-- End Portfolio Item -->
+`;
+
+      
+                // Agregar el producto al contenedor
+                productosGaleria.appendChild(productoDiv);
+              });
+            })
+            .catch(error => {
+              console.error('Error al cargar los productos:', error);
+            });
+        }
+      
+        // Llamar a la función cuando se cargue la página
+        document.addEventListener('DOMContentLoaded', cargarProductos);
+      </script>
+      
     </section><!-- /Portfolio Section -->
 
     <!-- Services Section -->
@@ -704,7 +506,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
+        <h2>Realiza tu pedido</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
@@ -718,24 +520,24 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <h3>Dirección</h3>
+                  <p>5 de Mayo Nte. 91José Ma Morelos, 61518 Zitácuaro, Mich.</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <h3>Telefono</h3>
+                  <p>+52 715 115 78 32</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                  <h3>Email</h3>
+                  <p>chocolatcupcakesypostres@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -744,6 +546,11 @@
           </div>
 
           <div class="col-lg-7">
+            <h4>¡Haznos saber tus pedidos!</h4>
+            <p class="alert alert-info">
+                Todos los pedidos que realices serán revisados por nuestro equipo. 
+                Te informaremos a través de tu correo electrónico o número de contacto sobre la disponibilidad de tus productos.
+            </p>
             <form id="order-form" action="https://formspree.io/f/mdkkpaqr" method="post" data-aos="fade-up" data-aos-delay="200" redirect="https://kari12333.github.io/chocolat/">
               <div class="row gy-4">
                 
@@ -836,7 +643,7 @@
             });
           </script>
         </div>
-                  
+
         </div>
 
       </div>
@@ -849,14 +656,7 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <p>© <span>Copyright 2025</span> <strong class="px-1 sitename">CHOCOLAT</strong> <span>Todos los derechos reservados.</span></p>
       </div>
     </div>
 

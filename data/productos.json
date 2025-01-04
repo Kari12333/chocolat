@@ -1,0 +1,32 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Cupcake de Chocolate",
+            "descripcion": "Delicioso cupcake de chocolate con crema.",
+            "categoria": "Cupcakes",
+            "imagen": "assets/img/cupcakes/chocolate.jpg"
+        },
+        {
+            "id": 2,
+            "nombre": "Pastel de Fresa",
+            "descripcion": "Pastel de fresa con crema batida.",
+            "categoria": "Pasteles",
+            "imagen": "assets/img/pasteles/fresa.jpg"
+        },
+        {
+            "id": 3,
+            "nombre": "Tiramisú",
+            "descripcion": "Clásico postre italiano.",
+            "categoria": "Postres",
+            "imagen": "assets/img/portfolio/branding-1.jpg"
+        },
+        {
+            "id": 4,
+            "nombre": "Cupcake",
+            "descripcion": "Cupcake de vainilla con glaseado de colores.",
+            "categoria": "Cupcakes",
+            "imagen": "assets/img/portfolio/app-1.jpg"
+        }
+    ]
+}
